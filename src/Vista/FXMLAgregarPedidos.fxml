@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Box?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="560.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.FXMLController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Menu Pedidos" />
+      <Label layoutX="265.0" layoutY="138.0" text="AGREGAR PEDIDOS">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Box depth="100" drawMode="LINE" height="370.0" layoutX="350.0" layoutY="361.0" width="640.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Box>
+      <Label layoutX="60.0" layoutY="198.0" text="Articulo">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="250.0" text="Cliente">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="304.0" text="Unidades">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtArticulo" layoutX="298.0" layoutY="198.0" prefHeight="27.0" prefWidth="345.0" />
+      <TextField fx:id="txtCliente" layoutX="299.0" layoutY="250.0" prefHeight="27.0" prefWidth="345.0" />
+      <TextField fx:id="txtUnidades" layoutX="298.0" layoutY="304.0" prefHeight="27.0" prefWidth="345.0" />
+      <Button fx:id="btnGuardarPed" layoutX="270.0" layoutY="361.0" mnemonicParsing="false" onAction="#guardarPed" prefHeight="46.0" prefWidth="161.0" text="Guardar">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      
+      
+      <MenuButton fx:id="menuArt" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Menu Articulos">
+         <items>
+            <MenuItem id="Button_AgregarArticulo" fx:id="btnAgregarArticulos1" mnemonicParsing="false" onAction="#agregarArticulos" text="Agregar Articulo" />
+            <MenuItem id="Button_MostrarArticulo" mnemonicParsing="false" onAction="#mostrarArticulos" text="Mostrar Articulo" />
+         </items>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </MenuButton>
+      <MenuButton fx:id="menuCli" layoutX="199.0" layoutY="14.0" mnemonicParsing="false" text="Menu Clientes">
+         <items>
+            <MenuItem id="Button_AgregarClientes" fx:id="btn1" mnemonicParsing="false" onAction="#agregarClientes" text="Agregar Clientes" />
+            <MenuItem id="Button_MostrarClientes" mnemonicParsing="false" onAction="#mostrarClientes" text="Mostrar Clientes" />
+            <MenuItem id="Button_ClienteS" mnemonicParsing="false" onAction="#mostrarEstandar" text="Cliente Standard" />
+            <MenuItem id="Button_ClienteP" mnemonicParsing="false" onAction="#mostrarPremium" text="Cliente Premium" />
+         </items>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </MenuButton>
+      <Label fx:id="lblEstado" layoutX="62.0" layoutY="420.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <MenuButton fx:id="menuPed" layoutX="379.0" layoutY="14.0" mnemonicParsing="false" text="Menu Pedidos">
+         <items>
+            <MenuItem id="Button_AgregarPedido" mnemonicParsing="false" onAction="#agregarPedidos" text="Agregar Pedido" />
+            <MenuItem id="Button_AgregarPedido" mnemonicParsing="false" onAction="#eliminarPedidos" text="Eliminar Pedido" />
+            <MenuItem id="Button_MostrarPedido" mnemonicParsing="false" onAction="#mostrarPedidos" text="Mostrat Pedido" />
+            <MenuItem id="Button_PedidoPendiente" mnemonicParsing="false" onAction="#mostrarPendientes" text="Pedidos Pendientes" />
+            <MenuItem id="Button_PedidoEnviado" mnemonicParsing="false" onAction="#mostrarEnviados" text="Pedidos Enviados" />
+         </items>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </MenuButton>
+      
+   </children>
+</AnchorPane>

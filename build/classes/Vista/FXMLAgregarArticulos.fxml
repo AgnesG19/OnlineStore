@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="560.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.FXMLController">
+   <children>
+      <Label layoutX="696.0" layoutY="14.0" text="Menu Articulos" />
+      <Label layoutX="361.0" layoutY="97.0" prefHeight="67.0" prefWidth="229.0" text="AGREGAR ARTICULO">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="170.0" text="Descripcion">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDescripcion" layoutX="65.0" layoutY="208.0" prefHeight="176.0" prefWidth="309.0" />
+      <Label layoutX="551.0" layoutY="170.0" text="Gastos Envio">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtGastosEnvio" layoutX="586.0" layoutY="212.0" prefHeight="36.0" prefWidth="309.0" />
+      <Button fx:id="btnGuardarArt" layoutX="65.0" layoutY="419.0" mnemonicParsing="false" onAction="#guardarArt" prefHeight="46.0" prefWidth="229.0" text="Guardar" />
+      <Label layoutX="564.0" layoutY="313.0" text="PVP">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPVP" layoutX="579.0" layoutY="345.0" prefHeight="36.0" prefWidth="309.0" />
+      <MenuButton fx:id="menuArt" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Menu Articulos">
+         <items>
+            <MenuItem id="Button_AgregarArticulo" fx:id="btnAgregarArticulos1" mnemonicParsing="false" onAction="#agregarArticulos" text="Agregar Articulo" />
+            <MenuItem id="Button_MostrarArticulo" mnemonicParsing="false" onAction="#mostrarArticulos" text="Mostrar Articulo" />
+         </items>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </MenuButton>
+      <MenuButton fx:id="menuCli" layoutX="199.0" layoutY="14.0" mnemonicParsing="false" text="Menu Clientes">
+         <items>
+            <MenuItem id="Button_AgregarClientes" fx:id="btn1" mnemonicParsing="false" onAction="#agregarClientes" text="Agregar Clientes" />
+            <MenuItem id="Button_MostrarClientes" mnemonicParsing="false" onAction="#mostrarClientes" text="Mostrar Clientes" />
+            <MenuItem id="Button_ClienteS" mnemonicParsing="false" onAction="#mostrarEstandar" text="Cliente Standard" />
+            <MenuItem id="Button_ClienteP" mnemonicParsing="false" onAction="#mostrarPremium" text="Cliente Premium" />
+         </items>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </MenuButton>
+      <MenuButton fx:id="menuPed" layoutX="372.0" layoutY="14.0" mnemonicParsing="false" text="Menu Pedidos">
+         <items>
+            <MenuItem id="Button_AgregarPedido" mnemonicParsing="false" onAction="#agregarPedidos" text="Agregar Pedido" />
+            <MenuItem id="Button_AgregarPedido" mnemonicParsing="false" onAction="#eliminarPedidos" text="Eliminar Pedido" />
+            <MenuItem id="Button_MostrarPedido" mnemonicParsing="false" onAction="#mostrarPedidos" text="Mostrat Pedido" />
+            <MenuItem id="Button_PedidoPendiente" mnemonicParsing="false" onAction="#mostrarPendientes" text="Pedidos Pendientes" />
+            <MenuItem id="Button_PedidoEnviado" mnemonicParsing="false" onAction="#mostrarEnviados" text="Pedidos Enviados" />
+         </items>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </MenuButton>
+      <Label layoutX="564.0" layoutY="429.0" text="Tiempo de Preparacion">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTiempo" layoutX="579.0" layoutY="465.0" prefHeight="36.0" prefWidth="309.0" />
+      <Label fx:id="lblEstado" layoutX="67.0" layoutY="476.0" prefHeight="25.0" prefWidth="299.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
