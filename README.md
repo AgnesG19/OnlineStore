@@ -12,7 +12,11 @@ Este reto fue realizado con 3 compañeros más.</i></p>
 <h2> VIDEO RESUMEN </h2>
 https://youtu.be/D_wqh2RNhXc?si=WX7_du4zb-I1ISap
 
+<br>
+
 ![Java](https://img.shields.io/badge/java-de1414?style=for-the-badge&logo=java&logoColor=white)
 ![SQL](https://img.shields.io/badge/-MySQL-%2300f?style=for-the-badge&logo=MySQL&logoColor=white)
+
+</br>
 
 
