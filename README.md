@@ -1,7 +1,7 @@
 <h1>OnlineStore</h1>
 
 <p><i>Esta aplicacion fue realizada durante el FP de Dessarrollo de aplicaciones multiplataforma para la Universidad UOC. 
-Este reto fue realizada con 3 compañeros más.</i></p>
+Este reto fue realizado con 3 compañeros más.</i></p>
 
 <h2>Objetivo General</h2>
 <p> Desarrollar e Implementar una aplicación de gestión mediante técnicas avanzadas de programación Java (bibliotecas avanzadas de clases, creación de interfaces gráficas de usuario y persistencia de datos en SGBDOR).</p>
